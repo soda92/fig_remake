@@ -1,14 +1,31 @@
 from fig_remake.download_files import download_file
-import sys
 from fig_remake.parse_ids import parse_ids
+from argparse import ArgumentParser
+
 
 def main():
-    arg0 = sys.argv[1]
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--parse_id",
+        "-pa",
+        action="store_true",
+        default=False,
+        help="Parse download id",
+    )
+    parser.add_argument(
+        "--download",
+        "-d",
+        action="store_true",
+        default=False,
+        help="download the files",
+    )
+    args = parser.parse_args()
 
-    if arg0 == "parse":
-        parse_ids()
-
-    if arg0 == "download":
+    if args.parse_id:
         ids = parse_ids()
-        ids0 = ids[0]
-        download_file(ids0[0], ids0[1])
+        for prefix, id in ids:
+            print(prefix, id)
+    if args.download:
+        ids = parse_ids()
+        for prefix, id in ids:
+            download_file(prefix, id)

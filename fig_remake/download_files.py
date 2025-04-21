@@ -25,9 +25,9 @@ def download_file(prefix: str, id: str):
             rest_position = 0
             if os.path.exists(local_file):
                 rest_position = os.path.getsize(local_file)
-                print(rest_position, file_size)
+                # print(rest_position, file_size)
                 if rest_position == file_size:
-                    print("file already downlaoded")
+                    print("file already downloaded")
                     return
                 print(f"Resuming download from byte: {rest_position}")
                 ftp.sendcmd(f"REST {rest_position}")
