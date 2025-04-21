@@ -1,0 +1,9 @@
+[project]
+name = "fig-remake"
+version = "2025.4.21.0"
+description = "Remake figures from a paper"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "tqdm>=4.67.1",
+]
