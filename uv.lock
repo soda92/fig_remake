@@ -1,5 +1,14 @@
 version = 1
-requires-python = ">=3.10"
+requires-python = ">=3.11"
+
+[[package]]
+name = "bowtie2-py"
+version = "2025.4.22.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b7/cb/aa7bc839432687d0fb9b5a7202966f6373a06da40c969628bd078197c2a2/bowtie2_py-2025.4.22.1.tar.gz", hash = "sha256:91ec75f6bc7dfeb770e6d6fd9cf633c7f2f03fd918f9c166dd6589d42e42977b", size = 55723434 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3d/fb/3560d8ae4b7350d2cd927864762415734013712e8078a29238441b50a594/bowtie2_py-2025.4.22.1-py3-none-any.whl", hash = "sha256:473e2ca7e93605a1fe315a9c07a76895c5c95b1cad89bd3072d753f8bc869ded", size = 56018262 },
+]
 
 [[package]]
 name = "colorama"
@@ -11,15 +20,30 @@ wheels = [
 ]
 
 [[package]]
+name = "fastqc-py"
+version = "2025.4.22.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/13/42/fa223f1518e4b7e2f34023e06d17163086e79429230f078a6f65c895c1a9/fastqc_py-2025.4.22.0.tar.gz", hash = "sha256:d2539e8884708cc52f8be885804dcaf89b73f88eebe027da97f26bfeb8b694ae", size = 11578807 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/11/e4/b627b2166ee375fd7add9e113e534c393959001a6b06e318f7ad90326781/fastqc_py-2025.4.22.0-py3-none-any.whl", hash = "sha256:19cce7515b2796977fe6f3f58d69b7116409a515ad2a234ee9668ae4b0ad18a0", size = 11707994 },
+]
+
+[[package]]
 name = "fig-remake"
 version = "2025.4.21.0"
 source = { editable = "." }
 dependencies = [
+    { name = "bowtie2-py" },
+    { name = "fastqc-py" },
     { name = "tqdm" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "tqdm", specifier = ">=4.67.1" }]
+requires-dist = [
+    { name = "bowtie2-py", specifier = ">=2025.4.22.0" },
+    { name = "fastqc-py", specifier = ">=2025.4.22.0" },
+    { name = "tqdm", specifier = ">=4.67.1" },
+]
 
 [[package]]
 name = "tqdm"
