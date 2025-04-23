@@ -1,10 +1,12 @@
 import ftplib
 import os
 from tqdm import tqdm
+from pathlib import Path
 
 ftp_host = 'ftp.sra.ebi.ac.uk'
 ftp_user = 'anonymous'
 ftp_password = ''
+
 
 def download_file(prefix: str, id: str):
     remote_file = f'/vol1/fastq/SRR181/{prefix}/{id}/{id}.fastq.gz'
@@ -17,7 +19,9 @@ def download_file(prefix: str, id: str):
                 file_size = ftp.size(remote_file)
             except ftplib.error_perm as e:
                 if '550' in str(e):
-                    print("Warning: Could not determine remote file size. Progress might not be accurate.")
+                    print(
+                        'Warning: Could not determine remote file size. Progress might not be accurate.'
+                    )
                     file_size = None
                 else:
                     raise
@@ -27,16 +31,24 @@ def download_file(prefix: str, id: str):
                 rest_position = os.path.getsize(local_file)
                 # print(rest_position, file_size)
                 if rest_position == file_size:
-                    print("file already downloaded")
+                    print('file already downloaded')
                     return
-                print(f"Resuming download from byte: {rest_position}")
-                ftp.sendcmd(f"REST {rest_position}")
+                print(f'Resuming download from byte: {rest_position}')
+                ftp.sendcmd(f'REST {rest_position}')
 
             with open(local_file, 'ab') as lf:
                 if file_size is not None:
-                    pbar = tqdm(total=file_size, initial=rest_position, unit='B', unit_scale=True, desc=local_file)
+                    pbar = tqdm(
+                        total=file_size,
+                        initial=rest_position,
+                        unit='B',
+                        unit_scale=True,
+                        desc=local_file,
+                    )
                 else:
-                    pbar = tqdm(unit='B', unit_scale=True, desc=local_file)  # Without total size
+                    pbar = tqdm(
+                        unit='B', unit_scale=True, desc=local_file
+                    )  # Without total size
 
                 def callback(data):
                     lf.write(data)
@@ -45,9 +57,9 @@ def download_file(prefix: str, id: str):
                 ftp.retrbinary(f'RETR {remote_file}', callback)
 
                 pbar.close()
-                print("Download complete!")
+                print('Download complete!')
 
     except ftplib.all_errors as e:
-        print(f"FTP error: {e}")
+        print(f'FTP error: {e}')
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f'An error occurred: {e}')

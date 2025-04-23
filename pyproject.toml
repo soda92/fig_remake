@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
     "bowtie2-py>=2025.4.22.0",
     "fastqc-py>=2025.4.22.0",
+    "samtools-py>=2025.4.23.0",
     "tqdm>=4.67.1",
 ]
 
@@ -29,3 +30,12 @@ exclude = ["__pycache__", "*.pyc", "*.exe~", "*.syso"]
 
 [project.scripts]
 fig_remake = "fig_remake.main:main"
+
+[tool.ruff.format]
+# Specifies the preferred quote style.
+# Options are "double" (default) or "single".
+quote-style = "single"
+
+# Optional: other formatting settings
+# indent-style = "space"
+# skip-magic-trailing-comma = false

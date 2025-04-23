@@ -35,6 +35,7 @@ source = { editable = "." }
 dependencies = [
     { name = "bowtie2-py" },
     { name = "fastqc-py" },
+    { name = "samtools-py" },
     { name = "tqdm" },
 ]
 
@@ -42,7 +43,27 @@ dependencies = [
 requires-dist = [
     { name = "bowtie2-py", specifier = ">=2025.4.22.0" },
     { name = "fastqc-py", specifier = ">=2025.4.22.0" },
+    { name = "samtools-py", specifier = ">=2025.4.23.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
+]
+
+[[package]]
+name = "msys2-env"
+version = "2025.4.23.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/81/10173d08f37df04685b779aed4a547860ea164b6d37312d915d1c4a7d83d/msys2_env-2025.4.23.0-py3-none-win_amd64.whl", hash = "sha256:e1d4d135b1b0156ffa00d8f0bf76c32ec2edbcf7f23edaf0b446e18ea76e01ce", size = 2884374 },
+]
+
+[[package]]
+name = "samtools-py"
+version = "2025.4.23.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "msys2-env" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/72/39a61daa205bad2a9540848582e28f3f8f3c9fc7871f55682d61ba6a8257/samtools_py-2025.4.23.0-py3-none-win_amd64.whl", hash = "sha256:64155cb1c0e7e0bcfbddf27c8f36ba2cd1fe34cf80b6094db995d8ba58dcd8fd", size = 70147496 },
 ]
 
 [[package]]
