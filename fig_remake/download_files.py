@@ -10,7 +10,9 @@ ftp_password = ''
 
 def download_file(prefix: str, id: str):
     remote_file = f'/vol1/fastq/SRR181/{prefix}/{id}/{id}.fastq.gz'
-    local_file = f'{id}.fastq.gz'
+    current = Path(__file__).resolve().parent
+    local_file_p = current.parent.joinpath('data').joinpath(f'{id}.fastq.gz')
+    local_file = str(local_file_p).replace('\\', '/')
     try:
         with ftplib.FTP(ftp_host) as ftp:
             ftp.login(ftp_user, ftp_password)
