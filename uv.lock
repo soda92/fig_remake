@@ -21,11 +21,13 @@ wheels = [
 
 [[package]]
 name = "fastqc-py"
-version = "2025.4.22.0"
+version = "2025.4.24.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/13/42/fa223f1518e4b7e2f34023e06d17163086e79429230f078a6f65c895c1a9/fastqc_py-2025.4.22.0.tar.gz", hash = "sha256:d2539e8884708cc52f8be885804dcaf89b73f88eebe027da97f26bfeb8b694ae", size = 11578807 }
+dependencies = [
+    { name = "sodatools" },
+]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/11/e4/b627b2166ee375fd7add9e113e534c393959001a6b06e318f7ad90326781/fastqc_py-2025.4.22.0-py3-none-any.whl", hash = "sha256:19cce7515b2796977fe6f3f58d69b7116409a515ad2a234ee9668ae4b0ad18a0", size = 11707994 },
+    { url = "https://files.pythonhosted.org/packages/a2/0c/6bdfefbc65210ab923fa2421f54ef02e598ee526c84fba3c3f9de0bf19c4/fastqc_py-2025.4.24.0-py3-none-win_amd64.whl", hash = "sha256:bb0ce9af46107528e664b09bbc30028ee721ee1e241c33caf40b55a9f1ef0854", size = 55259586 },
 ]
 
 [[package]]
@@ -42,7 +44,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "bowtie2-py", specifier = ">=2025.4.22.0" },
-    { name = "fastqc-py", specifier = ">=2025.4.22.0" },
+    { name = "fastqc-py", specifier = ">=2025.4.24.0" },
     { name = "samtools-py", specifier = ">=2025.4.23.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
@@ -64,6 +66,15 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/29/72/39a61daa205bad2a9540848582e28f3f8f3c9fc7871f55682d61ba6a8257/samtools_py-2025.4.23.0-py3-none-win_amd64.whl", hash = "sha256:64155cb1c0e7e0bcfbddf27c8f36ba2cd1fe34cf80b6094db995d8ba58dcd8fd", size = 70147496 },
+]
+
+[[package]]
+name = "sodatools"
+version = "2025.2.16.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/20/18/0b1ed8f69f350fd63613c653250c42c292f730b50cf57b7a072e37700834/sodatools-2025.2.16.0.tar.gz", hash = "sha256:297eb126d9f93b440e7e5fc5c86593199e56eef7b89cd0897dfbbe931a94ff0b", size = 1014 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f3/d5/7ff84b93545cb70dab66ec1cc1cf590c826abf113a78bbe81c76dc120d83/sodatools-2025.2.16.0-py3-none-any.whl", hash = "sha256:17fdd6e477ebc8488851d88af66c1a49bcd83efc732e17566598efe7001afe82", size = 1416 },
 ]
 
 [[package]]

@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "bowtie2-py>=2025.4.22.0",
-    "fastqc-py>=2025.4.22.0",
+    "fastqc-py>=2025.4.24.0",
     "samtools-py>=2025.4.23.0",
     "tqdm>=4.67.1",
 ]
