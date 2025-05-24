@@ -1,0 +1,467 @@
+LOCUS       NZ_CAKNDS010000021     20027 bp    DNA     linear   CON 21-MAY-2025
+DEFINITION  Escherichia coli strain cpe078, whole genome shotgun sequence.
+ACCESSION   NZ_CAKNDS010000021 NZ_CAKNDS010000000
+VERSION     NZ_CAKNDS010000021.1
+DBLINK      BioProject: PRJNA224116
+            BioSample: SAMEA6451093
+            Assembly: GCF_929618365.1
+KEYWORDS    WGS; RefSeq.
+SOURCE      Escherichia coli
+  ORGANISM  Escherichia coli
+            Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria;
+            Enterobacterales; Enterobacteriaceae; Escherichia.
+REFERENCE   1  (bases 1 to 20027)
+  CONSRTM   Pathogen Informatics
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-FEB-2022) WELLCOME SANGER INSTITUTE, Pathogen
+            Informatics, Wellcome Sanger Institute, CB10 1SA, United Kingdom
+COMMENT     REFSEQ INFORMATION: The reference sequence is identical to
+            CAKNDS010000021.1.
+            The annotation was added by the NCBI Prokaryotic Genome Annotation
+            Pipeline (PGAP). Information about PGAP can be found here:
+            https://www.ncbi.nlm.nih.gov/genome/annotation_prok/
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider               :: NCBI RefSeq
+            Annotation Name                   :: GCF_929618365.1-RS_2025_05_21
+            Annotation Date                   :: 05/21/2025 09:08:44
+            Annotation Pipeline               :: NCBI Prokaryotic Genome
+                                                 Annotation Pipeline (PGAP)
+            Annotation Method                 :: Best-placed reference protein
+                                                 set; GeneMarkS-2+
+            Annotation Software revision      :: 6.10
+            Features Annotated                :: Gene; CDS; rRNA; tRNA; ncRNA
+            Genes (total)                     :: 5,173
+            CDSs (total)                      :: 5,049
+            Genes (coding)                    :: 4,858
+            CDSs (with protein)               :: 4,858
+            Genes (RNA)                       :: 124
+            rRNAs                             :: 8, 9, 11 (5S, 16S, 23S)
+            complete rRNAs                    :: 8, 1 (5S, 16S)
+            partial rRNAs                     :: 8, 11 (16S, 23S)
+            tRNAs                             :: 85
+            ncRNAs                            :: 11
+            Pseudo Genes (total)              :: 191
+            CDSs (without protein)            :: 191
+            Pseudo Genes (ambiguous residues) :: 0 of 191
+            Pseudo Genes (frameshifted)       :: 63 of 191
+            Pseudo Genes (incomplete)         :: 129 of 191
+            Pseudo Genes (internal stop)      :: 24 of 191
+            Pseudo Genes (multiple problems)  :: 21 of 191
+            CRISPR Arrays                     :: 2
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..20027
+                     /organism="Escherichia coli"
+                     /mol_type="genomic DNA"
+                     /strain="cpe078"
+                     /serovar="NA"
+                     /isolation_source="screen"
+                     /db_xref="taxon:562"
+                     /note="contig: .33431_1_102.21"
+     gene            <1..131
+                     /locus_tag="MJP18_RS24905"
+                     /pseudo
+     CDS             <1..131
+                     /locus_tag="MJP18_RS24905"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_012904434.1"
+                     /note="incomplete; too short partial abutting assembly
+                     gap; missing N-terminus; Derived by automated
+                     computational analysis using gene prediction method:
+                     Protein Homology."
+                     /pseudo
+                     /codon_start=3
+                     /transl_table=11
+                     /product="IS110 family transposase"
+     gene            complement(340..1353)
+                     /gene="mhpE"
+                     /locus_tag="MJP18_RS24910"
+     CDS             complement(340..1353)
+                     /gene="mhpE"
+                     /locus_tag="MJP18_RS24910"
+                     /EC_number="4.1.3.39"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414886.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="4-hydroxy-2-oxovalerate aldolase"
+                     /protein_id="WP_001013499.1"
+                     /translation="MNGKKLYISDVTLRDGMHAIRHQYSLENVRQIAKALDDARVDSI
+                     EVAHGDGLQGSSFNYGFGAHSDLEWIEAAADVVKHAKIATLLLPGIGTIHDLKNAWQA
+                     GARVVRVATHCTEADVSAQHIQYARELGMDTVGFLMMSHMTTPENLAKQAKLMEGYGA
+                     TCIYVVDSGGAMNMSDIRDRFRALKAELKPETQTGMHAHHNLSLGVANSIAAVEEGCD
+                     RIDASLAGMGAGAGNAPLEVFIAAADKLGWQHGTDLYALMDAADDLVRPLQDRPVRVD
+                     RETLALGYAGVYSSFLRHCETAAARYGLSAVDILVELGKRRMVGGQEDMIVDVALDLR
+                     NNK"
+     gene            complement(1350..2300)
+                     /gene="mhpF"
+                     /locus_tag="MJP18_RS24915"
+     CDS             complement(1350..2300)
+                     /gene="mhpF"
+                     /locus_tag="MJP18_RS24915"
+                     /EC_number="1.2.1.10"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414885.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="acetaldehyde dehydrogenase"
+                     /protein_id="WP_000044314.1"
+                     /translation="MSKRKVAIIGSGNIGTDLMIKILRHGQHLEMAVMVGIDPQSDGL
+                     ARARRMGVATTHEGVIGLMNMPEFADIDIVFDATSAGAHVKNDAALREAKPDIRLIDL
+                     TPAAIGPYCVPVVNLEANVDQLNVNMVTCGGQATIPMVAAVSRVARVHYAEIIASIAS
+                     KSAGPGTRANIDEFTETTSRAIEVVGGAAKGKAIIVLNPAEPPLMMRDTVYVLSDEAS
+                     QDDIEASINEMAEAVQAYVPGYRLKQRVQFEVIPQDKPVNLPGVGQFSGLKTAVWLEV
+                     EGAAHYLPAYAGNLDIMTSSALATAEKMAQSLARKAGEAA"
+     gene            complement(2297..3106)
+                     /gene="mhpD"
+                     /locus_tag="MJP18_RS24920"
+     CDS             complement(2297..3106)
+                     /gene="mhpD"
+                     /locus_tag="MJP18_RS24920"
+                     /EC_number="4.2.1.80"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_308432.2"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-keto-4-pentenoate hydratase"
+                     /protein_id="WP_000160734.1"
+                     /translation="MTKHTLEQLAADLRRAAEQGEAIAPLRDLIGIDNAEAAYAIQHI
+                     NVQYDVVQGRRVVGRKVGLTHPKVQQQLGVDQPDFGTLFADMCYGDNEIIPFSRVLQP
+                     RIEAEIALVLNRDLPATDITFDELYNAIEWVLPALEVVGSRIRDWSIQFVDTVADNAS
+                     CGVYVIGGPAQRPAGLDLKNCAMKMTRNNEEVSSGRGSECLGHPLNAAVWLARKMASL
+                     GEPLRAGDIILTGALGPMVAVNAGDRFEAHIEGIGSVAATFSSAAPKGSLS"
+     gene            complement(3116..3982)
+                     /gene="mhpC"
+                     /locus_tag="MJP18_RS24925"
+     CDS             complement(3116..3982)
+                     /gene="mhpC"
+                     /locus_tag="MJP18_RS24925"
+                     /EC_number="3.7.1.14"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414883.5"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-hydroxy-6-oxonona-2,4-dienedioate hydrolase"
+                     /protein_id="WP_000121898.1"
+                     /translation="MSYQPQTEAATSRFLNVEEAGKTLRIHFNDCGQGDETVVLLHGS
+                     GPGATGWANFSRNIDPLVEAGYRVILLDCPGWGKSDSIVNSGSRSDLNARILKSVVDQ
+                     LDIAKIHLLGNSMGGHSSVAFTLNWPERVGKLVLMGGGTGGMSLFTPMPTEGIKRLNQ
+                     LYRQPTIENLKLMMDIFVFDTSDLTDALFEARLNNMLSRRDHLENFVKSLEANPKQFP
+                     DFGPRLAEIKAQTLIVWGRNDRFVPMDAGLRLLSGIAGSELHIFRDCGHWAQWEHADA
+                     FNQLVLNFLARP"
+     gene            complement(4000..4944)
+                     /gene="mhpB"
+                     /locus_tag="MJP18_RS24930"
+     CDS             complement(4000..4944)
+                     /gene="mhpB"
+                     /locus_tag="MJP18_RS24930"
+                     /EC_number="1.13.11.16"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_308430.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2,3-dihydroxyphenylpropionate/2,
+                     3-dihydroxicinnamic acid 1,2-dioxygenase"
+                     /protein_id="WP_000543459.1"
+                     /translation="MHAYLHCLSHSPLVGYVDPAQEVLDEVNGVIASARERIAAFSPE
+                     LVVLFAPDHYNGFFYDVMPPFCLGVGATAIGDFGSAAGELPVPVELAEACAHAVMKSG
+                     IDLAVSYCMQVDHGFAQPLEFLLGGLDKVPVLPVFINGVATPLPGFQRTRMLGEAIGR
+                     FTSTLNKRVLFLGSGGLSHQPPVPELAKADAHMRDRLLGSGKDLPASERELRQQRVIS
+                     AAEKFVEDQRTLHPLNPIWDNQFMTLLEQGRIQELDAVSNEELSAIAGKSTHEIKTWV
+                     AAFAAISTFGNWRSEGRYYRPIPEWIAGFGSLSARTEN"
+     gene            complement(4946..6610)
+                     /gene="mhpA"
+                     /locus_tag="MJP18_RS24935"
+     CDS             complement(4946..6610)
+                     /gene="mhpA"
+                     /locus_tag="MJP18_RS24935"
+                     /EC_number="1.14.13.127"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414881.1"
+                     /GO_function="GO:0008688 - 3-(3-hydroxyphenyl)propionate
+                     hydroxylase activity [Evidence IEA]"
+                     /GO_process="GO:0019622 - 3-(3-hydroxy)phenylpropionate
+                     catabolic process [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="bifunctional
+                     3-(3-hydroxy-phenyl)propionate/3-hydroxycinnamic acid
+                     hydroxylase"
+                     /protein_id="WP_023155680.1"
+                     /translation="MAIQHPDIQPAVNHSVQVTIAGAGPVGLMMANYLGQMGIDVLVV
+                     EKLDKLIDYPRAIGIDDEALRTMQSVGLVDDVLPHTTPWHAMRFLTPKGRCFADIQPM
+                     TDEFGWPRRNAFIQPQVDAVMLEGLSRFPNVRCLFSRELEVFSQQNDEVTLHLKTAEG
+                     QRETVKAQWLVACDGGASFVRRTLNVPFEGKTAPNQWIVVDIANDPLSTPHIYLCCDP
+                     VRPYVSAALPHAVRRFEFMVMPGETEEQLREPQNMRKLLSKVLPNPDNVELIRQRVYT
+                     HNARLAQRFRIDRVLLAGDAAHIMPVWQGQGYNSGMRDAFNLAWKLALVIQGKARDAL
+                     LDTYQQERRDHAKAMIDLSVTAGNVLAPPKRWQGTLRDGVSWLLNYLPPVKRYFLEMR
+                     FKPMPQYYGGALVREGEAKHSPVGKMFIQPKVTLENGDVTLLDNAIGANFAVIGWGCN
+                     PLWGMSDEQIQQWRALGTRFIQVVPEVQIHTAQDNHDGVLRVGDTQGRLRSWFAQHNA
+                     SLVVMRPDRFVAATAIPQTLGNTLNKLASVMTLTRPDADVSVEKVA"
+     gene            6801..7634
+                     /gene="mhpR"
+                     /locus_tag="MJP18_RS24940"
+     CDS             6801..7634
+                     /gene="mhpR"
+                     /locus_tag="MJP18_RS24940"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414880.2"
+                     /GO_function="GO:0003677 - DNA binding [Evidence IEA]"
+                     /GO_process="GO:0006355 - regulation of DNA-templated
+                     transcription [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA-binding transcriptional regulator"
+                     /protein_id="WP_001306931.1"
+                     /translation="MQNNEQTEYKTVRGLTRGLMLLNMLNKLDGGASVGLLAELSGLH
+                     RTTVRRLLETLQEEGYVRRSPSDDSFRLTIKVRQLSEGFRDEQWISALAAPLLGDLLR
+                     EVVWPTDVSTLDVDAMVVRETTHRFSRLSFHRAMVGRRLPLLKTASGLTWLAFCPEQE
+                     RKELIEMLAARPGDDYQLAREPLKLQAILARARKEGYGQNYRGWDQEEKIASIAVPLR
+                     SEQRVIGCLNLVYMASAMTIEQAAEKHLPALQRVAKQIEEGVESQAILVAGRRSGVHL
+                     R"
+     gene            7711..8793
+                     /gene="lacI"
+                     /locus_tag="MJP18_RS24945"
+     CDS             7711..8793
+                     /gene="lacI"
+                     /locus_tag="MJP18_RS24945"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414879.3"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="DNA-binding transcriptional repressor LacI"
+                     /protein_id="WP_000805885.1"
+                     /translation="MKPVTLYDVAEYAGVSYQTVSRVVNQASHVSAKTREKVEAAMAE
+                     LNYIPNRVAQQLAGKQSLLIGVATSSLALHAPSQIVAAIKSRADQLGASVVVSMVERS
+                     GVEACKAAVHNLLAQRVSGLIINYPLDDQDAIAVEAACANVPALFLDVSDQTPINSII
+                     FSHEDGTRLGVEHLVALGHQQIALLAGPLSSVSARLRLAGWHKYLTRNQIQPIAEREG
+                     DWSAMSGFQQTMQMLNEGIVPTAMLVANDQMALGAMRAITESGLRVGADISVVGYDDT
+                     EDSSCYIPPLTTIKQDFRLLGQTSVDRLLQLSQGQAVKGNQLLPVSLVKRKTTLAPNT
+                     QTASPRALADSLMQLARQVSRLESGQ"
+     gene            8916..11990
+                     /gene="lacZ"
+                     /locus_tag="MJP18_RS24950"
+     CDS             8916..11990
+                     /gene="lacZ"
+                     /locus_tag="MJP18_RS24950"
+                     /EC_number="3.2.1.23"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414878.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="beta-galactosidase"
+                     /protein_id="WP_023155678.1"
+                     /translation="MTMITDSLAVVLQRRDWENPGVTQLNRLAAHPPFASWRNSEEAR
+                     TDRPSQQLRSLNGEWRFAWFPAPEAVPESWLECDLPEADTVVVPSNWQMHGYDAPIYT
+                     NVTYPITVNPPFVPAENPTGCYSLTFNIDESWLQEGQTRIIFDGVNSAFHLWCNGRWV
+                     GYGQDSRLPSEFDLSAFLRAGKNRLAVMVLRWSDGSYLEDQDMWRMSGICRDVSLLHK
+                     PTTQISDFHVATRFNDDFSRAVLEAEVQMYGELRDELRVTVSLWLGETQVASGTAPFG
+                     GEIIDERGGYADRVTLGLNVENPKLWSAEIPNIYRAVVELHTADGTLIEAEACDVGFR
+                     EVRIENGLLLLNGKPLLIRGVNRHEHHPLHGQVMDEQTMVQDILLMKQNNFNAVRCSH
+                     YPNHPLWYTLCDRYGLYVVDEANIETHGMVPMNRLTDDPRWLPAMSERVTRMVQRDRN
+                     HPSVIIWSLGNESGHGANHDALYRWIKSVDPSRPVQYEGGGADTTATDIICPMYARVD
+                     EDQLFPAVPKWSIKKWLSLPGELRPLILCEYAHAMGNSLGGFAKYWQAFRQYPRLQGG
+                     FVWDWVDQSLIKYDENGNPWSAYGGDFGDTPNDRQFCMNGLVFADRTPHPALTEAKHQ
+                     QQFFQFRLSGQTIEVTSEYLFRHSDNELLHWMVALDGKPLASGEVPLDVAPQGKQVIE
+                     LPELPQPESTGQLWLTVRVVQPNATAWSEAGHISAWQQWRLAENLSVTLPSASHIIPQ
+                     LTTSETDFCIELGNKRWQFNRQSGLLSQMWIGDEKQLLTPLRDQFTRAPLDNDIGVSE
+                     ATRIDPNAWVERWKAAGHYQAEAALLQCSADTLADAVLITTAHAWQHQGKTLFISRKT
+                     YRIDGSGQMAITVDVEVASDTPHPARIGLTCQLAQVAERVNWLGLGPQENYPDRLTAA
+                     CFDRWDLPLSDMYTPYVFPSENGLRCGTRELNYGPHQWRGDFQFNISRYSQQQLMETS
+                     HRHLLHAEEGTWLNIDGFHMGIGGDDSWSPSVSAEFQLSAGRYHYQLVWCQK"
+     gene            12042..13295
+                     /gene="lacY"
+                     /locus_tag="MJP18_RS24955"
+     CDS             12042..13295
+                     /gene="lacY"
+                     /locus_tag="MJP18_RS24955"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414877.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="lactose permease"
+                     /protein_id="WP_000291546.1"
+                     /translation="MYYLKNTNFWMFGLFFFFYFFIMGAYFPFFPIWLHDINHISKSD
+                     TGIIFAAISLFSLLFQPLFGLLSDKLGLRKYLLWIITGMLVMFAPFFIFIFGPLLQYN
+                     ILVGSIVGGIYLGFCFNAGAPAVEAFIEKVSRRSNFEFGRARMFGCVGWALCASIVGI
+                     MFTINNQFVFWLGSGCALILAVLLFFAKTDAPSSATVANAVGANHSAFSLKLALELFR
+                     QPKLWFLSLYVIGVSCTYDVFDQQFANFFTSFFATGEQGTRVFGYVTTMGELLNASIM
+                     FFAPLIINRIGGKNALLLAGTIMSIRIIGSSFATSALEVVILKTLHMFEVPFLLVGCF
+                     KYITSQFEVRFSATIYLVCFCFFKQLAMIFMSVLAGNMYESIGFQGAYLVLGLVALGF
+                     TLISVFTLSGPGPLSLLRRQVNEVA"
+     gene            complement(13374..14555)
+                     /gene="cynX"
+                     /locus_tag="MJP18_RS24960"
+     CDS             complement(13374..14555)
+                     /gene="cynX"
+                     /locus_tag="MJP18_RS24960"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_001306928.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="cyanate transporter CynX"
+                     /protein_id="WP_023140157.1"
+                     /translation="MRNHQKTFTMLLVLVLIGLNMRPLLTSVGPLLPQLRQASGMSFS
+                     VAALLTALPVVTMGGLALAGSWLHQHVSERRSVAISLLLIAVGALMRELYPQSALLLS
+                     SALLGGVGIGIIQAVMPSVIKRRFQQRTPLVMGLWSAALMGGGGLGAAITPWLVQHSE
+                     SWYQTLAWWALPAVVALFAWWWQSAREVASSHKTTTTPVRVVFTPRAWTLGVYFGLIN
+                     GGYASLIAWLPAFYIEIGASAQYSGSLLALMTLGQAAGALLMPAMARHQDRRKLLMLA
+                     LVLQLVGFCGFIWLPLQLPVLWAMVCGLGLGGAFPLCLLLALDHSVQPAIAGKLVAFM
+                     QGIGFIIAGLAPWFSGVLRSISGNYLMDWAFHALCVVGLMIITLRFAPARFPQLWVKE
+                     V"
+     gene            complement(14561..15031)
+                     /gene="cynS"
+                     /locus_tag="MJP18_RS24965"
+     CDS             complement(14561..15031)
+                     /gene="cynS"
+                     /locus_tag="MJP18_RS24965"
+                     /EC_number="4.2.1.104"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_308420.1"
+                     /GO_function="GO:0008824 - cyanate hydratase activity
+                     [Evidence IEA]"
+                     /GO_process="GO:0009439 - cyanate metabolic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="cyanase"
+                     /protein_id="WP_000616241.1"
+                     /translation="MIQSQINRNIRLDLADAILLSKAKKDLSFAEIADGTGLAEAFVT
+                     AALLGQQALPADAARLVGAKLDLDEDAILLLQMIPLRGCIDDRIPTDPTMYRFYEMLQ
+                     VYGTTLKALVHEKFGDGIISAINFKLDVKKVADPEGGERAVITLDGKYLPTKPF"
+     gene            complement(15062..15721)
+                     /gene="cynT"
+                     /locus_tag="MJP18_RS24970"
+     CDS             complement(15062..15721)
+                     /gene="cynT"
+                     /locus_tag="MJP18_RS24970"
+                     /EC_number="4.2.1.1"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414873.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="carbonic anhydrase CynT"
+                     /protein_id="WP_000658652.1"
+                     /translation="MKEIIDGFLKFQREAFPKREALFKQLATQQSPRTLFISCSDSRL
+                     VPELVTQREPGDLFVIRNAGNIVPSYGPEPGGVSASVEYAVAALRVSDIVICGHSNCG
+                     AMTAIASCQCMDHMPAVSHWLRYADSARVVNEARPHSDLPSKAAAMVRENVIAQLANL
+                     QTHPSVRLALEEGRIALHGWVYDIESGSIAAFDGATRQFVPLAANPRVCAIPLRQPTA
+                     A"
+     gene            15831..16730
+                     /gene="cynR"
+                     /locus_tag="MJP18_RS24975"
+     CDS             15831..16730
+                     /gene="cynR"
+                     /locus_tag="MJP18_RS24975"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414872.3"
+                     /GO_function="GO:0003700 - DNA-binding transcription
+                     factor activity [Evidence IEA]"
+                     /GO_process="GO:0006355 - regulation of DNA-templated
+                     transcription [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="transcriptional regulator CynR"
+                     /protein_id="WP_000952481.1"
+                     /translation="MLSRHINYFLAVAEHGSFTRAASALHVSQPALSQQIRQLEESLG
+                     VPLFDRSGRTIRLTDAGEVWRQYASRALQELGAGKRAIHDVADLTRGSLRIAVTPTFT
+                     SYFIGPLMADFYARYPGITLQLQEMSQEKIEDLLCRDELDVGIAFAPVHSPELEAIPL
+                     LTESLALVVAKHHPLAACEQVALSRLHDEKLVLLSAEFATREQIDHYCEKAGLHPQVV
+                     IEANSISAVLELIRRTSLSTLLPAAIATQHDGLKAISLAPPLLERTAVLLRRKNSWQT
+                     AAAKAFLHMALDKCAVVGGNESR"
+     gene            <16847..16930
+                     /locus_tag="MJP18_RS26080"
+                     /pseudo
+     CDS             <16847..16930
+                     /locus_tag="MJP18_RS26080"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414872.3"
+                     /note="incomplete; partial in the middle of a contig;
+                     missing N-terminus; Derived by automated computational
+                     analysis using gene prediction method: Protein Homology."
+                     /pseudo
+                     /codon_start=1
+                     /transl_table=11
+                     /product="hypothetical protein"
+     gene            complement(17067..18350)
+                     /gene="codA"
+                     /locus_tag="MJP18_RS24980"
+     CDS             complement(17067..18350)
+                     /gene="codA"
+                     /locus_tag="MJP18_RS24980"
+                     /EC_number="3.5.4.1"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414871.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="cytosine/isoguanine deaminase"
+                     /protein_id="WP_001295686.1"
+                     /translation="MSNNALQTIINARLPGEEGLWQIHLQDGKISAIDAQSGVMPITE
+                     NSLDAEQGLVIPPFVEPHIHLDTTQTAGQPNWNQSGTLFEGIERWAERKALLTHDDVK
+                     QRAWQTLKWQIANGIQHVRTHVDVSDATLTALKAMLEVKQEVAPWIDLQIVAFPQEGI
+                     LSYPNGEALLEEALRLGADVVGAIPHFEFTREYGVESLHKTFALAQKYDRLIDVHCDE
+                     IDDEQSRFVETVAALAHREGMGARVTASHTTAMHSYNGAYTSRLFRLLKMSGINFVAN
+                     PLVNIHLQGRFDTYPKRRGITRVKEMLESGINVCFGHDDVFDPWYPLGTANMLQVLHM
+                     GLHVCQLMGYGQINDGLNLITHHSARTLNLQDYGIAAGNSANLIILPAENGFDALRRQ
+                     VPVRYSVRGGKVIASTQPAQTTVYLEQPEAIDYKR"
+     gene            complement(18340..19599)
+                     /gene="codB"
+                     /locus_tag="MJP18_RS24985"
+     CDS             complement(18340..19599)
+                     /gene="codB"
+                     /locus_tag="MJP18_RS24985"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_414870.1"
+                     /GO_component="GO:0016020 - membrane [Evidence IEA]"
+                     /GO_function="GO:0015209 - cytosine transmembrane
+                     transporter activity [Evidence IEA]"
+                     /GO_process="GO:0055085 - transmembrane transport
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="cytosine permease"
+                     /protein_id="WP_000076233.1"
+                     /translation="MSQDNNFSQGPVPQSARKGVLALTFVMLGLTFFSASMWTGGTLG
+                     TGLSYHDFFLAVLIGNLLLGIYTSFLGYIGAKTGLTTHLLARFSFGVKGSWLPSLLLG
+                     GTQVGWFGVGVAMFAIPVGKATGLDINLLIAVSGLLMTVTVFFGISALTVLSVIAVPA
+                     IACLGGYSVWLAVNGMGGLDALKAVVPAQPLDFNVALALVVGSFISAGTLTADFVRFG
+                     RNAKLAVLVAMVAFFLGNSLMFIFGAAGAAALGMADISDVMIAQGLLLPAIVVLGLNI
+                     WTTNDNALYASGLGFANITGMSSKTLSVINGIIGTVCALWLYNNFVGWLTFLSAAIPP
+                     VGGVIIADYLMNRRRYEHFATTRMMSVNWVAILAVALGIAAGHWLPGIVPVNAVLGGA
+                     LSYLILNPILNRKTTAAMTHVEANSVE"
+CONTIG      join(CAKNDS010000021.1:1..20027)
+//
+

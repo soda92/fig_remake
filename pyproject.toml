@@ -5,7 +5,9 @@ description = "Remake figures from a paper"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "biopython>=1.85",
     "bowtie2-py>=2025.4.22.0",
+    "dna-features-viewer>=3.1.5",
     "fastqc-py>=2025.4.24.0",
     "jupyter>=1.1.1",
     "pytest>=8.3.5",
